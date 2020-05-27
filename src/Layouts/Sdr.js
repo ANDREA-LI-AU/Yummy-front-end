@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
-
+import {Link} from 'react-router-dom';
 import {
     LineChartOutlined,
     BarsOutlined,
@@ -55,7 +55,9 @@ class Sdr extends React.Component{
                     <Menu.Item >Channel 02</Menu.Item>
                   </SubMenu>
                   <Menu.Item icon={<PlusOutlined />}>
-                    Upload
+                    <Link to={"/upload"}>
+                      Upload
+                    </Link>
                     </Menu.Item>
                 </Menu>
               </Sider>
