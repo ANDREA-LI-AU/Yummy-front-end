@@ -2,10 +2,12 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 
 import {
-    DesktopOutlined,
-    PieChartOutlined,
-    FileOutlined,
-    TeamOutlined,
+    LineChartOutlined,
+    BarsOutlined,
+    BellOutlined,
+    HomeOutlined,
+    PlusOutlined,
+    TagOutlined,
     UserOutlined,
   } from '@ant-design/icons';
    
@@ -28,22 +30,33 @@ class Sdr extends React.Component{
               <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
                 <div className="logo" />
                 <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-                  <Menu.Item key="1" icon={<PieChartOutlined />}>
+                  <Menu.Item icon={<HomeOutlined />}>
                     Home
                   </Menu.Item>
-                  <Menu.Item key="2" icon={<DesktopOutlined />}>
+                  <Menu.Item icon={<UserOutlined />}>
+                    Dashboard
+                  </Menu.Item>
+                  <Menu.Item icon={<LineChartOutlined />}>
                     Trending
                   </Menu.Item>
-                  <SubMenu key="sub1" icon={<UserOutlined />} title="Playlists">
-                    <Menu.Item key="3">Watch Later</Menu.Item>
-                    <Menu.Item key="4">Eating</Menu.Item>
-                    <Menu.Item key="5">Cooking</Menu.Item>
+                  <SubMenu key="sub1" icon={<TagOutlined />} title="Category">
+                    <Menu.Item >Tags</Menu.Item>
+                    <Menu.Item >Cuisines</Menu.Item>
+                    <Menu.Item >Eat Travel Love</Menu.Item>
+                    <Menu.Item >Cooking</Menu.Item>
                   </SubMenu>
-                  <SubMenu key="sub2" icon={<TeamOutlined />} title="Your Likes">
-                    <Menu.Item key="6">Channel 01</Menu.Item>
-                    <Menu.Item key="8">Channel 02</Menu.Item>
+                  <SubMenu key="sub2" icon={<BarsOutlined />} title="Playlists">
+                    <Menu.Item >Watch Later</Menu.Item>
+                    <Menu.Item >My Playlist 1</Menu.Item>
+                    <Menu.Item >My Playlist 1</Menu.Item>
                   </SubMenu>
-                  <Menu.Item key="9" icon={<FileOutlined />} title="Upload"/>
+                  <SubMenu key="sub3" icon={<BellOutlined />} title="Subscription">
+                    <Menu.Item >Channel 01</Menu.Item>
+                    <Menu.Item >Channel 02</Menu.Item>
+                  </SubMenu>
+                  <Menu.Item icon={<PlusOutlined />}>
+                    Upload
+                    </Menu.Item>
                 </Menu>
               </Sider>
           );

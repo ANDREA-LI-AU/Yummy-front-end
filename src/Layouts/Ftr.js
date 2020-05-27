@@ -4,7 +4,7 @@ const {  Footer } = Layout;
 
 function Ftr(){
     return (
-        <Footer>
+        <Footer style={{textAlign:"center"}}>
             <p>
                 Ant Design ©2018 Created by Ant UED
             </p>

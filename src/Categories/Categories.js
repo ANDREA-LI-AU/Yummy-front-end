@@ -9,8 +9,9 @@ import Sdr from '../Layouts/Sdr';
   const { Content } = Layout;
   
 
-class Home extends React.Component{
+class Category extends React.Component{
 
+    
         render() {
           return (
             <Layout style={{ minHeight: '100vh' }}>
@@ -42,4 +43,4 @@ class Home extends React.Component{
 
 
 
-export default Home;
+export default Category;
