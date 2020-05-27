@@ -31,7 +31,9 @@ class Sdr extends React.Component{
                 <div className="logo" />
                 <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                   <Menu.Item icon={<HomeOutlined />}>
-                    Home
+                    <Link to={"/"}>
+                      Home
+                    </Link>
                   </Menu.Item>
                   <Menu.Item icon={<UserOutlined />}>
                     Dashboard

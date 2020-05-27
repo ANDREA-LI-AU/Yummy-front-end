@@ -11,8 +11,10 @@ class UploadPage extends React.Component{
     return (
       <Layout style={{ minHeight: '100vh' }}>
         <Sdr/>
+
         <Layout>
         <Hdr/>
+
         <UploadFile/>
         
         <Ftr/>
