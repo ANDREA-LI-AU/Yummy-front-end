@@ -1,9 +1,9 @@
 import React from 'react';
-import { Layout, Breadcrumb, Menu } from 'antd';
+import { Layout, Breadcrumb } from 'antd';
 //import ReactPlayer from 'react-player';
 
 import CateVideoLists from './CateVideoLists';
-import { Link } from 'react-router-dom';
+
 
    
   const { Content } = Layout;

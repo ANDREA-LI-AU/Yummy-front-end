@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Route, Switch } from 'react-router-dom';
-import { HOME_URL, UPLOAD_PROFILE_URL, CATE_URL, DASHBOARD_URL, TRENDING_URL } from './URLMap';
+import { HOME_URL, UPLOAD_PROFILE_URL, CATE_URL, DASHBOARD_URL} from './URLMap';
 import Home from '../Home/Home';
 import UploadPage from '../UploadPage/UploadPage';
 import Category from '../Categories/Categories';

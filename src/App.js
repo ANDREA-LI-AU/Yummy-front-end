@@ -10,7 +10,7 @@ import { Layout } from 'antd';
 function App() {
   return (
     <div className="App">
-      <Layout style={{ minHeight: '100vh' }}>
+      <Layout style={{ height: '100vh' }}>
 
         <Sdr/>
 

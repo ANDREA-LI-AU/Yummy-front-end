@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import {Link} from 'react-router-dom';
 import {
-    LineChartOutlined,
     BarsOutlined,
     BellOutlined,
     HomeOutlined,
@@ -40,11 +39,6 @@ class Sdr extends React.Component{
                       Dashboard
                     </Link>
                   </Menu.Item>
-                  <Menu.Item icon={<LineChartOutlined />}>
-                    <Link to="/trending">
-                      Trending
-                    </Link>
-                  </Menu.Item>
                   <Menu.Item icon={ <TagOutlined/>}>
                     <Link to="/category">
                     Category
@@ -56,8 +50,8 @@ class Sdr extends React.Component{
                     <Menu.Item >My Playlist 1</Menu.Item>
                   </SubMenu>
                   <SubMenu key="sub2" icon={<BellOutlined />} title="Subscription">
-                    <Menu.Item >Channel 01</Menu.Item>
-                    <Menu.Item >Channel 02</Menu.Item>
+                    <Menu.Item >Subscription 01</Menu.Item>
+                    <Menu.Item >Subscription 02</Menu.Item>
                   </SubMenu>
                   <Menu.Item icon={<PlusOutlined />}>
                     <Link to={"/upload"}>
