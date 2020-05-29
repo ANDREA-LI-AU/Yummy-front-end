@@ -36,23 +36,26 @@ class Sdr extends React.Component{
                     </Link>
                   </Menu.Item>
                   <Menu.Item icon={<UserOutlined />}>
-                    Dashboard
+                    <Link to="/dashboard">
+                      Dashboard
+                    </Link>
                   </Menu.Item>
                   <Menu.Item icon={<LineChartOutlined />}>
-                    Trending
+                    <Link to="/trending">
+                      Trending
+                    </Link>
                   </Menu.Item>
-                  <SubMenu key="sub1" icon={<TagOutlined />} title="Category">
-                    <Menu.Item >Tags</Menu.Item>
-                    <Menu.Item >Cuisines</Menu.Item>
-                    <Menu.Item >Eat Travel Love</Menu.Item>
-                    <Menu.Item >Cooking</Menu.Item>
-                  </SubMenu>
-                  <SubMenu key="sub2" icon={<BarsOutlined />} title="Playlists">
+                  <Menu.Item icon={ <TagOutlined/>}>
+                    <Link to="/category">
+                    Category
+                  </Link>
+                  </Menu.Item>
+                  <SubMenu key="sub1" icon={<BarsOutlined />} title="Playlists">
                     <Menu.Item >Watch Later</Menu.Item>
                     <Menu.Item >My Playlist 1</Menu.Item>
                     <Menu.Item >My Playlist 1</Menu.Item>
                   </SubMenu>
-                  <SubMenu key="sub3" icon={<BellOutlined />} title="Subscription">
+                  <SubMenu key="sub2" icon={<BellOutlined />} title="Subscription">
                     <Menu.Item >Channel 01</Menu.Item>
                     <Menu.Item >Channel 02</Menu.Item>
                   </SubMenu>

@@ -7,14 +7,14 @@ import { Layout } from 'antd';
   const { Content } = Layout;
   
 
-class Home extends React.Component{
+class Dashboard extends React.Component{
 
         render() {
           return (
                
                 <Content style={{ margin: '0 16px' }}>
                   <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-                    Feature videos.
+                    Personal information
                   </div>
                 </Content>
                 
@@ -26,4 +26,4 @@ class Home extends React.Component{
 
 
 
-export default Home;
+export default Dashboard;
